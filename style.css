@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.primary, .secondary{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+    padding: 5px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: purple;
+    color: white;
+}
+
+.search-icon{
+    background-image: url('https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png');
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.channel{
+    background-image: url('https://placehold.co/250x35');
+    width: 250px;
+    height: 35px;
+    background-size: 100% 100%;
+}
+
+.main{
+    display: flex;
+}
+
+.carousel{
+    background-color: gray;
+    width: auto;
+    height: 500px;
+    background-size: 100% 100%;
+}
+
+.stream{
+    background-image: url('https://placehold.co/400x250');
+    width: 400px;
+    height: 250px;
+    background-size: 100% 100%;
+    margin: 5px;
+}
+
+.live{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sidebar{
+    background-color: darkgray;
+}
+
+@media screen and (max-width:1000px) {
+    .live-channels{
+        display: none;
+    }
+    .sidebar{
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .searchbar{
+        display: none;
+    }
+
+    .search-icon{
+        display: flex;
+    }
+}
